@@ -3,10 +3,10 @@ ul{
         a{
             padding: 0 2rem;
             color: #fff;
+            cursor: pointer;
             &:hover{
                 color: $banner-bgColor;
                 text-decoration: none;
-                cursor: pointer;
             }
         }
     }
