@@ -1,0 +1,45 @@
+.top-wrapper {
+    background-color: $header-bgColor;
+    font-size: 1.8rem;
+    .header-top {
+        padding: 2rem 0;
+    }
+    .nav-links {
+        @include header-list();
+        // ul {
+        //     li {
+        //         padding: 0 1rem;
+        //     }
+        // }
+    }
+    .contact-info {
+        // ul {
+        //     padding-left: 3rem;
+        //     li {
+        //         padding: 0 1rem;
+        //     }
+        // }
+        @include header-list();
+        padding-left: 3rem;
+    }
+}
+.header-bottom{
+    background-color: $banner-bgColor;
+    .navbar-brand{
+        font-size: 4.3rem;
+        font-weight: 700;
+        color: $black-color;
+        &__split-nav{
+            color: $logo-color;
+        }
+    }
+    .navbar-nav{
+        li{
+            a{
+                color: $black-color;
+                font-size: 2.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

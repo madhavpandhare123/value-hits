@@ -1,0 +1,9 @@
+@mixin header-list {
+    ul{
+        li{
+            a{
+                padding: 0 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.client-section{
+    justify-content: space-between;
+    &__title{
+        color: $white-color;
+        background-color: $client-bgColor;
+        font-size: 4.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 1.5rem;
+    }
+    &__images{
+        display: flex;
+        align-items: center;
+        img{
+            padding: 0 4rem;
+            width: 100%;
+        }
+    }
+}

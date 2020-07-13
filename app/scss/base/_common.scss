@@ -1,0 +1,13 @@
+ul{
+    li{
+        a{
+            padding: 0 2rem;
+            color: #fff;
+            &:hover{
+                color: $banner-bgColor;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

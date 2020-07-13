@@ -1,0 +1,34 @@
+.industries-section{
+    color: $black-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__heading-main{
+        color: $industries-color;
+        font-size: 3rem;
+    }
+    &__sub-heading{
+        font-size: 5rem;
+        font-weight: 100;
+    }
+    &__list{
+        padding: 5rem;
+        margin: 0 1rem;
+        ul{
+            flex-wrap: wrap;
+            text-align: center;
+            li{
+                flex: 1 0 21%;
+                padding: 5rem;
+                border-right: 1px dashed #000;
+                border-bottom: 1px dashed #000;
+                .img-tag{
+                    margin-top: 5rem;
+                    font-size: 2.2rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
