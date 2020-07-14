@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valuehits</title>
-    <link rel="shortcut icon" href="../app/images/favicon/favicon.ico"/>
+    <link rel="shortcut icon" href="../app/images/favicon/favicon.ico" />
     <link rel="stylesheet" href="../app/css/styles.css">
     <link rel="stylesheet" href="../app/css/fonts.css">
 </head>
@@ -97,9 +97,112 @@
                 <img src="../app/images/client6.png">
             </div>
         </section>
+        <section class="banner-section">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../app/images/sample1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../app/images/sample2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../app/images/sample1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="banner-section__tag">
+                <h5 class="banner-section__tag__main-heading">We are an SEO Agency. We provide</h5>
+                <h3 class="banner-section__tag__subheading">Effective international SEO</h3>
+                <p class="brief-desc banner-section__tag__desc">Our proven, technical SEO will drive more organic
+                    traffic
+                    to your website and help you consequently increase your sales.</p>
+                <button class="btn btn-primary banner-section__tag__banner-btn" type="button">View All Services <span
+                        class="icon-arrow"></span></button>
+            </div>
+        </section>
+        <section class="audit-section">
+            <div class="container">
+                <form class="form-inline" action="/action_page.php">
+                    <label for="label" class="audit-section__web-label">Enter your website URL to get started</label>
+                    <input type="text" class="form-control audit-section__web-input" id="label" size="50"
+                        value="http://" name="website">
+                    <button type="submit" class="btn audit-section__web-btn">Get Audit</button>
+                </form>
+            </div>
+        </section>
+        <section class="services-section">
+            <!-- <div class="container"> -->
+            <div class="services-section__company-brief">ValueHits is the one-stop digital marketing agency based in
+                Mumbai,
+                India providing digital marketing services that help you grow your online brand visibility,
+                improve your position on the search engines, and increase conversion rate.
+            </div>
+            <div class="services d-flex">
+                <div class="our-services">
+                    <h5 class="main-title our-services__service-title">Our Services</h5>
+                    <h2 class="sub-title our-services__subtitle">Lorem Ipsum is simply dummy text</h2>
+                    <p class="brief-desc">We believe in effective marketing that has real impact on the growth of
+                        website traffic and increase of sales.</p>
+                </div>
+                <div class="services-section__list">
+                    <ul class="list-unstyle d-flex">
+                        <li>
+                            <h3 class="title">Hire SEO Expert</h3>
+                            <p class="description">Lorem Ipsum is simply dummy text</p>
+                            <span class="icon-arrow"></span>
+                        </li>
+                        <li>
+                            <h3 class="title">Hire PPC Expert</h3>
+                            <p class="description">Lorem Ipsum is simply dummy text</p>
+                            <span class="icon-arrow"></span>
+                        </li>
+                        <li>
+                            <h3 class="title">Hire SEM Expert</h3>
+                            <p class="description">Lorem Ipsum is simply dummy text</p>
+                            <span class="icon-arrow"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <section class="agency-section">
+            <div class="container">
+                <div class="agency-section__details">
+                    <h5 class="main-title ">2019 Agency of the Year</h5>
+                    <h2 class="sub-title">Expect great things from your SEO agency</h2>
+                    <p class="brief-desc">Believe it because you’ve seen it. Here are real numbers from just one successful Victorious partner.</p>
+                </div>
+                <div class="toggle">
+                    <div></div>
+                    <div class="agency-records">
+                        <ul class="list-unstyle d-flex justify-content-between align-items-center">
+                            <li>
+                                <h3 class="box-heading">104,457</h3>
+                                <h6 class="box-subheading">Annual Organic Traffic</h6>
+                            </li>
+                            <li>
+                                <h3 class="box-heading">26,740</h3>
+                                <h6 class="box-subheading">Ranking Keywords</h6>
+                            </li>
+                            <li>
+                                <h3 class="box-heading">780%</h3>
+                                <h6 class="box-subheading">Return on Investment</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="industries-section">
-            <h5 class="industries-section__heading-main">Industries</h5>
-            <h2 class="industries-section__sub-heading">Delivered 500+ projects worldwide; across 22+ industries</h2>
+            <h5 class="main-title">Industries</h5>
+            <h2 class="sub-title">Delivered 500+ projects worldwide; across 22+ industries</h2>
             <div class="shadow-lg industries-section__list">
                 <ul class="list-unstyle d-flex">
                     <li>
@@ -239,6 +342,14 @@
 
 
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>

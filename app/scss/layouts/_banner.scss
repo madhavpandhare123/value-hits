@@ -1,0 +1,30 @@
+.banner-section{
+    position: relative;
+    color: #000;
+    &__tag{
+        position: absolute;
+        left: 8%;
+        top: 20%;
+        &__main-heading{
+            font-size: 3.5rem;
+            font-weight: 100;
+        }
+        &__subheading{
+            font-size: 8rem;
+            width: 66%;
+        }
+        &__banner-btn{
+            font-size: 2.2rem;
+        }
+    }
+    
+
+}
+.carousel-indicators{
+    left: 60%;   
+    bottom: 5%; 
+}
+
+.carousel-indicators li{
+    background-color: #000;
+}

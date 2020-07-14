@@ -69,4 +69,9 @@
     color: #fff;
   }
 }
+.icon-arrow {
+  &:before {
+    content: $icon-arrow; 
+  }
+}
 

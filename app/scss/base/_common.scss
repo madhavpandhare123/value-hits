@@ -1,13 +1,25 @@
-ul{
-    li{
-        a{
+ul {
+    li {
+        a {
             padding: 0 2rem;
             color: #fff;
             cursor: pointer;
-            &:hover{
+            &:hover {
                 color: $banner-bgColor;
                 text-decoration: none;
             }
         }
     }
+}
+
+.main-title {
+    color: $industries-color;
+    font-size: 3rem;
+}
+.sub-title {
+    font-size: 5rem;
+    font-weight: 100;
+}
+.brief-desc{
+    font-size: 2.2rem;
 }

@@ -6,6 +6,15 @@
  }
  .btn{
      display: inline-block;
-     padding: 10px 15px;
+     padding: 10px 25px;
      border: 1px solid transparent;
  } 
+ .btn-primary{
+     border: 1px solid $btn-border;
+     background-color: $banner-bgColor;
+     color: $black-color;
+     &:hover{
+         color: $white-color;
+         background-color: $black-color;
+     }
+ }

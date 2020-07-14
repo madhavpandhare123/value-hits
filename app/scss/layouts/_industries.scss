@@ -6,14 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    &__heading-main{
-        color: $industries-color;
-        font-size: 3rem;
-    }
-    &__sub-heading{
-        font-size: 5rem;
-        font-weight: 100;
-    }
     &__list{
         padding: 5rem;
         margin: 0 6rem;

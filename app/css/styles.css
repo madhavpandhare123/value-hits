@@ -7211,6 +7211,9 @@ a.text-dark:hover, a.text-dark:focus {
   content: "";
   color: #fff; }
 
+.icon-arrow:before {
+  content: ""; }
+
 .top-wrapper {
   background-color: #030303;
   font-size: 1.8rem; }
@@ -7292,12 +7295,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  .industries-section__heading-main {
-    color: #EA3A3A;
-    font-size: 3rem; }
-  .industries-section__sub-heading {
-    font-size: 5rem;
-    font-weight: 100; }
   .industries-section__list {
     padding: 5rem;
     margin: 0 6rem;
@@ -7315,6 +7312,103 @@ footer {
           font-size: 2.2rem;
           font-weight: 100; }
 
+.banner-section {
+  position: relative;
+  color: #000; }
+  .banner-section__tag {
+    position: absolute;
+    left: 8%;
+    top: 20%; }
+    .banner-section__tag__main-heading {
+      font-size: 3.5rem;
+      font-weight: 100; }
+    .banner-section__tag__subheading {
+      font-size: 8rem;
+      width: 66%; }
+    .banner-section__tag__banner-btn {
+      font-size: 2.2rem; }
+
+.carousel-indicators {
+  left: 60%;
+  bottom: 5%; }
+
+.carousel-indicators li {
+  background-color: #000; }
+
+.audit-section {
+  background-color: #F43535;
+  padding: 2rem 0; }
+  .audit-section__web-label {
+    font-size: 2.2rem;
+    margin-right: 4rem; }
+  .audit-section__web-input {
+    background-color: #F43535;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: #fff;
+    font-size: 2.2rem;
+    color: #fff; }
+    .audit-section__web-input:focus {
+      background-color: rgba(112, 112, 112, 0.4);
+      color: #fff; }
+  .audit-section__web-btn {
+    background-color: rgba(112, 112, 112, 0.4);
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 5px 60px !important; }
+
+.services-section {
+  color: #000; }
+  .services-section__company-brief {
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem; }
+  .services-section__list {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5); }
+    .services-section__list ul li {
+      background-color: #1D1D1D;
+      color: #fff;
+      padding: 2rem; }
+      .services-section__list ul li:nth-child(even) {
+        background-color: #383838; }
+      .services-section__list ul li .title {
+        font-size: 5rem;
+        padding: 2rem 0; }
+      .services-section__list ul li .description {
+        font-size: 2.2rem;
+        padding: 2rem 0;
+        margin-bottom: 4rem; }
+
+.our-services {
+  padding: 3rem 7rem; }
+  .our-services__service-title {
+    margin-bottom: 3rem; }
+  .our-services__subtitle {
+    margin-bottom: 3rem; }
+
+.agency-section {
+  background-color: #E2E7EA; }
+  .agency-section__details {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+.agency-records {
+  padding-bottom: 10rem; }
+  .agency-records ul li {
+    background-color: #fff;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 10px;
+    width: 350px; }
+    .agency-records ul li .box-heading {
+      font-size: 7.5rem; }
+    .agency-records ul li .box-subheading {
+      font-size: 3rem;
+      font-weight: 100; }
+
 html {
   font-size: 10px; }
 
@@ -7322,7 +7416,6 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
-  color: #fff;
   font-family: "Poppins"; }
 
 * {
@@ -7350,8 +7443,16 @@ ul {
 
 .btn {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 25px;
   border: 1px solid transparent; }
+
+.btn-primary {
+  border: 1px solid #707070;
+  background-color: #E2E7EA;
+  color: #000; }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #000; }
 
 ul li a {
   padding: 0 2rem;
@@ -7360,3 +7461,14 @@ ul li a {
   ul li a:hover {
     color: #E2E7EA;
     text-decoration: none; }
+
+.main-title {
+  color: #EA3A3A;
+  font-size: 3rem; }
+
+.sub-title {
+  font-size: 5rem;
+  font-weight: 100; }
+
+.brief-desc {
+  font-size: 2.2rem; }

@@ -1,0 +1,39 @@
+.services-section{
+    color: $black-color;
+    &__company-brief{
+        font-size: 3rem;
+        text-align: center;
+        padding: 5rem;
+    }
+    &__list{
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+        ul{
+            li{
+                background-color: $services-bgColor;
+                color: $white-color;
+                padding: 2rem;
+                &:nth-child(even){
+                    background-color: $client-bgColor;
+                }
+                .title{
+                    font-size: 5rem;
+                    padding: 2rem 0;
+                }
+                .description{
+                    font-size: 2.2rem;
+                    padding: 2rem 0;
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+}
+.our-services{
+    padding: 3rem 7rem;
+    &__service-title{
+        margin-bottom: 3rem;
+    }
+    &__subtitle{
+        margin-bottom: 3rem;
+    }
+}
