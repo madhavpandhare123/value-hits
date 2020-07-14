@@ -1,9 +1,15 @@
 ul {
+    @include breakpoint(mobile-max) {
+        justify-content: center;
+    }
     li {
         a {
             padding: 0 2rem;
             color: #fff;
             cursor: pointer;
+            @include breakpoint(mobile-max) {
+                padding: 0 0.5rem;
+            }
             &:hover {
                 color: $banner-bgColor;
                 text-decoration: none;
@@ -15,11 +21,36 @@ ul {
 .main-title {
     color: $industries-color;
     font-size: 3rem;
+    @include breakpoint(mobile-max) {
+        font-size: 2rem;
+    }
 }
 .sub-title {
     font-size: 5rem;
     font-weight: 100;
+    @include breakpoint(mobile-max) {
+        font-size: 2.5rem;
+    }
 }
 .brief-desc{
     font-size: 2.2rem;
+    @include breakpoint(mobile-max) {
+        font-size: 0.9rem;
+    }
+}
+
+.form-inpt{
+    outline: 0;
+        border-width: 0 0 1px;
+        border-color: $white-color;
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        @include breakpoint(mobile-max) {
+            font-size: 1rem;
+        }
+        &:focus{
+            color: $white-color;
+            box-shadow: none;
+            border-color: $white-color;
+        }
 }

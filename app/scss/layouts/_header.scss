@@ -1,24 +1,33 @@
 .top-wrapper {
     background-color: $header-bgColor;
     font-size: 1.8rem;
+    @include breakpoint(mobile-max) {
+        font-size: 1rem;
+    }
     .header-top {
         padding: 2rem 0;
+        @include breakpoint(mobile-max) {
+            padding: 1rem 0;
+            flex-direction: column;
+        }
+        &__left{
+            @include breakpoint(mobile-max) {
+                margin-bottom: 1rem;
+            }
+        }
+        &__right{
+            @include breakpoint(mobile-max) {
+                display: block !important;
+            }
+        }
     }
     .nav-links {
         @include header-list();
-        // ul {
-        //     li {
-        //         padding: 0 1rem;
-        //     }
-        // }
+        @include breakpoint(mobile-max) {
+            margin-bottom: 1rem;
+        }
     }
     .contact-info {
-        // ul {
-        //     padding-left: 3rem;
-        //     li {
-        //         padding: 0 1rem;
-        //     }
-        // }
         @include header-list();
         padding-left: 3rem;
     }
@@ -29,16 +38,32 @@
         font-size: 4.3rem;
         font-weight: 700;
         color: $black-color;
+        @include breakpoint(mobile-max) {
+            font-size: 2.3rem;
+        }
         &__split-nav{
             color: $logo-color;
         }
     }
+    .navbar-toggler{
+        background-color: $black-color;
+    }
     .navbar-nav{
+        @include breakpoint(mobile-max) {
+            text-align: center;
+        }
         li{
+            @include breakpoint(mobile-max) {
+                border-bottom: 1px solid $black-color;
+                padding: 1rem 0;
+            }
             a{
                 color: $black-color;
                 font-size: 2.2rem;
                 font-weight: 500;
+                @include breakpoint(mobile-max) {
+                    font-size: 1rem;
+                }
             }
         }
     }

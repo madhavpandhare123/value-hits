@@ -1,16 +1,18 @@
 .audit-section{
     background-color: $audit-bg;
     padding: 2rem 0;
+    @include breakpoint(mobile-max) {
+        padding: 1rem 0;
+    }
     &__web-label{
         font-size: 2.2rem;
         margin-right: 4rem;
+        @include breakpoint(mobile-max) {
+            font-size: 1rem;
+        }
     }
     &__web-input{
         background-color: $audit-bg;
-        outline: 0;
-        border-width: 0 0 1px;
-        border-color: $white-color;
-        font-size: 2.2rem;
         color: $white-color;
         &:focus{
             background-color: rgba(112, 112, 112, 0.4);
@@ -22,5 +24,18 @@
         font-size: 2.5rem;
         color: $white-color;
         padding: 5px 60px !important;
+        @include breakpoint(mobile-max) {
+            font-size: 1rem;
+        }
     }
 }
+form{
+    @include breakpoint(mobile-max) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// @include breakpoint(mobile-max) {
+//     font-size: 8rem;
+// }

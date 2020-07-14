@@ -6,24 +6,104 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @include breakpoint(mobile-max) {
+            padding: 2rem 0;
+        }
     }
 }
-.agency-records{
+.agency-records {
     padding-bottom: 10rem;
-    ul{
-        li{
+    ul {
+        @include breakpoint(mobile-max) {
+            display: block !important;
+        }
+        li {
             background-color: $white-color;
             padding: 4rem;
             text-align: center;
             border-radius: 10px;
             width: 350px;
-            .box-heading{
-                font-size: 7.5rem;
+            @include breakpoint(mobile-max) {
+                width: 300px;
+                margin-bottom: 1rem;
             }
-            .box-subheading{
+            .box-heading {
+                font-size: 7.5rem;
+                @include breakpoint(mobile-max) {
+                    font-size: 4.5rem;
+                }
+            }
+            .box-subheading {
                 font-size: 3rem;
                 font-weight: 100;
+                @include breakpoint(mobile-max) {
+                    font-size: 2rem;
+                }
             }
+        }
+    }
+}
+
+.toggle-seo {
+    margin-bottom: 4rem;
+    input[type="checkbox"] {
+        display: none;
+        &:checked {
+            + {
+                label {
+                    .toggle-track {
+                        &:before {
+                            background-color: rgba(112, 112, 112, 0.4);
+                            color: $white-color;
+                            right: 240px;
+                            content: "Before SEO";
+                            @include breakpoint(mobile-max) {
+                                right: 140px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    label {
+        cursor: pointer;
+    }
+    .toggle-track {
+        font-size: 2.5rem;
+        color: rgba(112, 112, 112, 0.4);
+        display: block;
+        height: 60px;
+        width: 450px;
+        background: $audit-bg;
+        border-radius: 30px;
+        position: relative;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &:before {
+            content: "After SEO";
+            color: $black-color;
+            display: inline-block;
+            height: 45px;
+            width: 200px;
+            background: $white-color;
+            border-radius: 30px;
+            position: absolute;
+            top: 6px;
+            right: 5px;
+            transition: right 0.2s ease-in;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include breakpoint(mobile-max) {
+                width: 150px;
+            }
+        }
+        @include breakpoint(mobile-max) {
+            font-size: 1.5rem;
+            width: 300px;
         }
     }
 }

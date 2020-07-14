@@ -15,7 +15,7 @@
         <div class="top-wrapper">
             <div class="container">
                 <div class="header-top d-flex justify-content-between">
-                    <div class="left">
+                    <div class="header-top__left">
                         <ul class="list-unstyle d-flex">
                             <li>
                                 <a href="javascript:void(0)"><span class="icon-facebook"></span></a>
@@ -34,7 +34,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="right d-flex">
+                    <div class="header-top__right d-flex">
                         <div class="nav-links">
                             <ul class="list-unstyle d-flex">
                                 <li>
@@ -86,17 +86,6 @@
         </div>
     </header>
     <main>
-        <section class="client-section d-flex">
-            <span class="client-section__title">Our Clients</span>
-            <div class="client-section__images">
-                <img src="../app/images/client1.png">
-                <img src="../app/images/client2.png">
-                <img src="../app/images/client3.png">
-                <img src="../app/images/client4.png">
-                <img src="../app/images/client5.png">
-                <img src="../app/images/client6.png">
-            </div>
-        </section>
         <section class="banner-section">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -130,12 +119,14 @@
             <div class="container">
                 <form class="form-inline" action="/action_page.php">
                     <label for="label" class="audit-section__web-label">Enter your website URL to get started</label>
-                    <input type="text" class="form-control audit-section__web-input" id="label" size="50"
+                    <input type="text" class="form-control form-inpt audit-section__web-input" id="label" size="50"
                         value="http://" name="website">
                     <button type="submit" class="btn audit-section__web-btn">Get Audit</button>
                 </form>
             </div>
         </section>
+
+
         <section class="services-section">
             <!-- <div class="container"> -->
             <div class="services-section__company-brief">ValueHits is the one-stop digital marketing agency based in
@@ -143,7 +134,7 @@
                 India providing digital marketing services that help you grow your online brand visibility,
                 improve your position on the search engines, and increase conversion rate.
             </div>
-            <div class="services d-flex">
+            <div class="services-section__services d-flex">
                 <div class="our-services">
                     <h5 class="main-title our-services__service-title">Our Services</h5>
                     <h2 class="sub-title our-services__subtitle">Lorem Ipsum is simply dummy text</h2>
@@ -177,10 +168,17 @@
                 <div class="agency-section__details">
                     <h5 class="main-title ">2019 Agency of the Year</h5>
                     <h2 class="sub-title">Expect great things from your SEO agency</h2>
-                    <p class="brief-desc">Believe it because you’ve seen it. Here are real numbers from just one successful Victorious partner.</p>
+                    <p class="brief-desc">Believe it because you’ve seen it. Here are real numbers from just one
+                        successful Victorious partner.</p>
                 </div>
                 <div class="toggle">
-                    <div></div>
+                    <div class="toggle-seo d-flex justify-content-center">
+                        <input type="checkbox" id="check-seo" name="check-seo">
+                        <label for="check-seo"><span class="toggle-track">
+                                <span>Before SEO</span>
+                                <span>After SEO</span>
+                            </span></label>
+                    </div>
                     <div class="agency-records">
                         <ul class="list-unstyle d-flex justify-content-between align-items-center">
                             <li>
@@ -198,6 +196,17 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="client-section d-flex">
+            <span class="client-section__title">Our Clients</span>
+            <div class="client-section__images">
+                <img src="../app/images/client1.png">
+                <img src="../app/images/client2.png">
+                <img src="../app/images/client3.png">
+                <img src="../app/images/client4.png">
+                <img src="../app/images/client5.png">
+                <img src="../app/images/client6.png">
             </div>
         </section>
         <section class="industries-section">
@@ -256,18 +265,96 @@
                 </ul>
             </div>
         </section>
+        <section class="blog-section">
+            <div class="container">
+                <div class="blog-section__title d-flex flex-column align-items-center">
+                    <h5 class="main-title">Blogs / News</h5>
+                    <h2 class="sub-title">Lorem ipsum content will be there</h2>
+                </div>
+                <div class="blog-section__blog-list">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img class="card-img-top w-100" src="../app/images/card1.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">HOW TO ATTRACT AN AUDIENCE ON SOCIAL MEDIA THIS QUARANTINE?</p>
+                                <span class="icon-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img class="card-img-top w-100" src="../app/images/card2.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">STRATEGIES TO OPTIMIZE YOUR DIGITAL MARKETING IN SEO</p>
+                                <span class="icon-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img class="card-img-top w-100" src="../app/images/card3.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">IS SOCIAL MEDIA SCHEDULING IMPORTANT?</p>
+                                <span class="icon-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img class="card-img-top w-100" src="../app/images/card4.png" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">HANDLING DIGITAL BUSINESS DURING CRISIS</p>
+                                <span class="icon-arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reach-out-section">
+                        <div class="reach-out-section__title">
+                            <h5 class="main-title">Reach Out</h5>
+                            <h2 class="sub-title reach-out-section__title__blog-sub-title">How may I assist you today?</h2>
+                        </div>
+                        <div class="reachout-form">
+                            <form action="/action_page.php">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control form-inpt react-inpt" placeholder="Name"
+                                            name="name">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="email" class="form-control form-inpt react-inpt" placeholder="Email"
+                                            email name="email">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <input type="text" class="form-control form-inpt react-inpt"
+                                            placeholder="Phone no." name="phone">
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <textarea class="form-control form-inpt react-inpt" placeholder="Message"
+                                            id="exampleFormControlTextarea1" rows="2"></textarea>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <button type="submit" class="btn btn-primary reach-out-btn mt-3">Submit <span class="icon-arrow"></span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-wrapper">
             <div class="container">
                 <div class="row">
                     <div class="footer-section d-flex">
-                        <!-- <div class="col-lg-2"> -->
                         <div
                             class="footer-section__address col-lg-2 col-md-3 d-flex justify-content-center flex-column">
-                            <div class="img-wrapper">
-                                <img src="../app/images/google-partner.png" class="w-100">
-                            </div>
+                            <!-- <div class="img-wrapper"> -->
+                            <img src="../app/images/google-partner.png" class="w-100">
+                            <!-- </div> -->
                             <address class="footer-section__address__company">
                                 4th Floor, The Ruby, 29, Senapati Bapat Marg,
                                 Dadar (West), Mumbai, Maharashtra
@@ -330,15 +417,16 @@
                                 <li><a href="javascript:void(0)">While Label Marketing</a></li>
                             </ul>
                         </div>
-                        <!-- </div> -->
                     </div>
 
                 </div>
             </div>
+
         </div>
         <div class="copyright-section">
             Copyright © 2020 ValueHits - A Digital Marketing Agency in Mumbai, India.
         </div>
+
 
 
     </footer>
