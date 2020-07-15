@@ -1,0 +1,112 @@
+.choose-us-section {
+    background: url(../images/choose-us.png);
+    background-size: 100% 100%;
+    padding-left: 7%;
+    @include breakpoint(mobile-max) {
+        padding-left: 0;
+    }
+    &__title {
+        padding-top: 8rem;
+        @include breakpoint(mobile-max) {
+            padding-top: 4rem;
+        }
+        @include breakpoint(mobile-max) {
+            padding-top: 2rem;
+            text-align: center;
+        }
+        &__main-heading {
+            font-size: 3rem;
+            color: $white-color;
+            @include breakpoint(ipad-pro) {
+                font-size: 2rem;
+            }
+        }
+        &__sub-heading {
+            font-size: 5rem;
+            color: $white-color;
+            font-weight: 100;
+            @include breakpoint(ipad-pro) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    &__slider{
+        padding: 8rem 0;
+        @include breakpoint(ipad-pro) {
+            padding: 2rem 0;
+        }
+    }
+}
+
+.carousel {
+    width: 100%;
+}
+
+.slide-box {
+    display: flex;
+    justify-content: space-between;
+    &__slider-div{
+        background-color: $white-color;
+        margin-left: 2rem;
+        padding: 2rem 3rem;
+        @include breakpoint(mobile-max) {
+            margin:1rem;
+        }
+        &__sliding-title{
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            @include breakpoint(ipad-pro) {
+                font-size: 1.5rem;
+            }
+        }
+        &__sliding-desc{
+            font-size: 2.2rem;
+            @include breakpoint(ipad-pro) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .slide-box {
+        &__slider-div {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .slide-box {
+        &__slider-div {
+            -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .slide-box {
+        &__slider-div {
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.carousel-control-next{
+    top: -20%;
+    bottom: unset;
+    @include breakpoint(mobile-max) {
+        top: -10%;
+    }
+}

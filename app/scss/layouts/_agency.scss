@@ -13,6 +13,9 @@
 }
 .agency-records {
     padding-bottom: 10rem;
+    @include breakpoint(mobile-max) {
+        padding-bottom: 2rem;
+    }
     ul {
         @include breakpoint(mobile-max) {
             display: block !important;
@@ -23,12 +26,18 @@
             text-align: center;
             border-radius: 10px;
             width: 350px;
+            @include breakpoint(ipad-pro) {
+                width: 310px;
+            }
             @include breakpoint(mobile-max) {
-                width: 300px;
+                width: 100%;
                 margin-bottom: 1rem;
             }
             .box-heading {
                 font-size: 7.5rem;
+                @include breakpoint(ipad-pro) {
+                    font-size: 5.5rem;
+                }
                 @include breakpoint(mobile-max) {
                     font-size: 4.5rem;
                 }

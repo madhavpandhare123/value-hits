@@ -1,12 +1,21 @@
 .blog-section {
     &__title {
         padding: 9rem 0;
+        @include breakpoint(ipad-pro) {
+            padding: 3rem 0;
+         }
     }
     &__blog-list {
         padding-bottom: 35rem;
         position: relative;
         display: flex;
         justify-content: center;
+        @include breakpoint(ipad-pro) {
+            padding-bottom: 29rem;
+         }
+        @include breakpoint(mobile-max) {
+            padding-bottom: 17rem;
+         }
     }
 }
 
@@ -29,10 +38,10 @@
     width: 100%;
     background-color: $black-color;
     padding: 6rem 4rem;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+    @include breakpoint(mobile-max) {
+           bottom: -15%;
+           padding: 3rem 1rem;
+        }
     &__title {
         display: flex;
         flex-direction: column;
@@ -45,6 +54,9 @@
 
     form {
         padding: 5rem;
+        @include breakpoint(mobile-max) {
+            padding: 2rem;
+         }
         .react-inpt {
             background-color: $black-color;
             color: $white-color;
@@ -54,9 +66,16 @@
         }
         .reach-out-btn{
             font-size: 3rem;
-            padding: 10px 50px;
+            // padding: 10px 50px;
             color: $white-color;
             background-color: $audit-bg;
+            width: 100%;
+            @include breakpoint(ipad-pro) {
+                font-size: 2rem;
+             }
+            @include breakpoint(mobile-max) {
+                font-size: 1rem;
+             }
             &:hover{
                 background-color: $white-color;
                 color: $audit-bg;

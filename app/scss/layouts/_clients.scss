@@ -1,5 +1,11 @@
 .client-section {
     justify-content: space-between;
+    @include breakpoint(large-desktop-max) {
+        justify-content: unset;
+    }
+    @include breakpoint(mobile-max) {
+        display: block !important;
+    }
     &__title {
         color: $white-color;
         background-color: $client-bgColor;
@@ -7,6 +13,11 @@
         font-weight: 600;
         text-transform: uppercase;
         padding: 1.5rem;
+        @include breakpoint(ipad-pro) {
+            font-size: 2.4rem;
+            width: 18%;
+            padding: 1rem;
+        }
         @include breakpoint(mobile-max) {
             font-size: 3rem;
         }
@@ -14,11 +25,24 @@
     &__images {
         display: flex;
         align-items: center;
+        @include breakpoint(mobile-max) {
+            display: block !important;
+        }
         img {
             padding: 0 4rem;
             width: 100%;
+            @include breakpoint(large-desktop-max) {
+                padding: 0 1rem;
+            }
+            @include breakpoint(ipad-pro) {
+                padding: 0 0.4rem;
+            }
             @include breakpoint(mobile-max) {
                 padding: 0 1rem;
+                margin-bottom: 2rem;
+                border: 1px dashed $black-color;
+                width: 300px;
+                height: auto;
             }
         }
     }

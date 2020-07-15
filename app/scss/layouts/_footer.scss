@@ -1,5 +1,10 @@
 .dot-border {
     border-right: 1px dashed #000;
+    @include breakpoint(mobile-max) {
+        border-right: none;
+        border-bottom: 1px dotted $black-color;
+        margin-bottom: 2rem;
+    }
 }
 footer {
     color: $black-color;
@@ -10,6 +15,8 @@ footer {
             padding-top: 35rem;
             @include breakpoint(mobile-max) {
                 display: block !important;
+                text-align: center;
+                padding-top: 29rem;
             }
             h2 {
                 font-size: 2.6rem;
@@ -18,6 +25,9 @@ footer {
             &__address {
                 &__company {
                     padding: 5rem 0;
+                    @include breakpoint(mobile-max) {
+                        padding: 2rem 0;
+                    }
                 }
             }
             &__company {

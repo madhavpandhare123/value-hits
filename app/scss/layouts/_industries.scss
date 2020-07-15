@@ -6,6 +6,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include breakpoint(mobile-max) {
+        padding: 2rem;
+    }
     &__list{
         padding: 5rem;
         margin: 0 6rem;
@@ -18,10 +21,18 @@
                 padding: 5rem;
                 border-right: 1px dashed #000;
                 border-bottom: 1px dashed #000;
+                @include breakpoint(mobile-max) {
+                    flex: 1 0 100%;
+                    border-right: none;
+                    padding: 2rem;
+                }
                 .img-tag{
                     margin-top: 5rem;
                     font-size: 2.2rem;
                     font-weight: 100;
+                    @include breakpoint(mobile-max) {
+                        margin-top: 1rem;
+                    }
                 }
             }
         }
