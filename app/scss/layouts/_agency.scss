@@ -45,6 +45,9 @@
             .box-subheading {
                 font-size: 3rem;
                 font-weight: 100;
+                @include breakpoint(ipad-max) {
+                    font-size: 1.7rem;
+                }
                 @include breakpoint(mobile-max) {
                     font-size: 2rem;
                 }

@@ -7384,6 +7384,9 @@ footer {
     padding: 5rem;
     margin: 0 6rem;
     background-color: #fff; }
+    @media (max-width: 768px) {
+      .industries-section__list {
+        margin: 0 0rem; } }
     .industries-section__list ul {
       flex-wrap: wrap;
       text-align: center; }
@@ -7588,6 +7591,9 @@ footer {
     .agency-records ul li .box-subheading {
       font-size: 3rem;
       font-weight: 100; }
+      @media (max-width: 768px) {
+        .agency-records ul li .box-subheading {
+          font-size: 1.7rem; } }
       @media (max-width: 767px) {
         .agency-records ul li .box-subheading {
           font-size: 2rem; } }
