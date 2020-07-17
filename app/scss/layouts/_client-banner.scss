@@ -10,5 +10,38 @@
     &__client-box{
         padding: 20rem 0 4rem 0;
         text-align: center;
+        &__title{
+            text-transform: uppercase;
+            padding: 4rem 0;
+        }
+        &__list{
+            ul{
+                display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+                li{
+                    list-style: none;
+        display: inline-block;
+        width: calc(100% / 4);
+        height: 120px;
+        text-align: center;
+        @include breakpoint(mobile-max) {
+            width: 100%;
+        }
+        img{
+            width: 150px;
+            height: 104px;
+        }
+                    
+                }
+            }
+        }
+    }
+    .list-group{
+        .list-group-item{
+            border-top-width: 1px !important;
+        }
     }
 }

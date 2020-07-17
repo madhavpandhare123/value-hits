@@ -7975,6 +7975,29 @@ footer {
   .clients__client-box {
     padding: 20rem 0 4rem 0;
     text-align: center; }
+    .clients__client-box__title {
+      text-transform: uppercase;
+      padding: 4rem 0; }
+    .clients__client-box__list ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      padding-left: 0; }
+      .clients__client-box__list ul li {
+        list-style: none;
+        display: inline-block;
+        width: calc(100% / 4);
+        height: 120px;
+        text-align: center; }
+        @media (max-width: 767px) {
+          .clients__client-box__list ul li {
+            width: 100%; } }
+        .clients__client-box__list ul li img {
+          width: 150px;
+          height: 104px; }
+  .clients .list-group .list-group-item {
+    border-top-width: 1px !important; }
 
 html {
   font-size: 10px; }
