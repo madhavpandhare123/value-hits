@@ -1,23 +1,23 @@
-.container{
+.container {
     max-width: 1400px;
 }
 .list-unstyle {
     list-style: none;
- }
- .btn{
-     display: inline-block;
-     padding: 10px 25px;
-     border: 1px solid transparent;
-     @include breakpoint(mobile-max) {
+}
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    @include breakpoint(mobile-max) {
         padding: 5px 10px;
     }
- } 
- .btn-primary{
-     border: 1px solid $btn-border;
-     background-color: $banner-bgColor;
-     color: $black-color;
-     &:hover{
-         color: $white-color;
-         background-color: $black-color;
-     }
- }
+}
+.btn-primary {
+    border: 1px solid $btn-border;
+    background-color: $banner-bgColor;
+    color: $black-color;
+    &:hover {
+        color: $white-color;
+        background-color: $black-color;
+    }
+}
