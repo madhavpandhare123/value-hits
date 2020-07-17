@@ -10,12 +10,12 @@
             padding: 1rem 0;
             flex-direction: column;
         }
-        &__left{
+        &__left {
             @include breakpoint(mobile-max) {
                 margin-bottom: 1rem;
             }
         }
-        &__right{
+        &__right {
             @include breakpoint(mobile-max) {
                 display: block !important;
             }
@@ -32,32 +32,32 @@
         padding-left: 3rem;
     }
 }
-.header-bottom{
+.header-bottom {
     background-color: $banner-bgColor;
-    .navbar-brand{
+    .navbar-brand {
         font-size: 4.3rem;
         font-weight: 700;
         color: $black-color;
         @include breakpoint(mobile-max) {
             font-size: 2.3rem;
         }
-        &__split-nav{
+        &__split-nav {
             color: $logo-color;
         }
     }
-    .navbar-toggler{
+    .navbar-toggler {
         background-color: $black-color;
     }
-    .navbar-nav{
-        @include breakpoint(mobile-max) {
+    .navbar-nav {
+        @include breakpoint(ipad-pro-max) {
             text-align: center;
         }
-        li{
-            @include breakpoint(mobile-max) {
+        li {
+            @include breakpoint(ipad-pro-max) {
                 border-bottom: 1px solid $black-color;
                 padding: 1rem 0;
             }
-            a{
+            a {
                 color: $black-color;
                 font-size: 2.2rem;
                 font-weight: 500;

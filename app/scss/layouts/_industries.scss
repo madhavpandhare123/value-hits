@@ -13,6 +13,9 @@
         padding: 5rem;
         margin: 0 6rem;
         background-color: $white-color;
+        @include breakpoint(ipad-pro-max) {
+            margin: 0 0rem;
+        }
         @include breakpoint(ipad-max) {
             margin: 0 0rem;
         }
