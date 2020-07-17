@@ -10,6 +10,9 @@
     &__client-box{
         padding: 20rem 0 4rem 0;
         text-align: center;
+        @include breakpoint(mobile-max) {                            
+            padding: 0rem 0 4rem 0;
+        }
         &__title{
             text-transform: uppercase;
             padding: 4rem 0;

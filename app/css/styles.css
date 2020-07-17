@@ -7912,6 +7912,9 @@ footer {
     .request-form {
       position: relative;
       top: 0; } }
+  @media (max-width: 767px) {
+    .request-form {
+      left: 0; } }
   .request-form__form-heading {
     font-size: 1.8rem;
     color: #fff;
@@ -7975,6 +7978,9 @@ footer {
   .clients__client-box {
     padding: 20rem 0 4rem 0;
     text-align: center; }
+    @media (max-width: 767px) {
+      .clients__client-box {
+        padding: 0rem 0 4rem 0; } }
     .clients__client-box__title {
       text-transform: uppercase;
       padding: 4rem 0; }

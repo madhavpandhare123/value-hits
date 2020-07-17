@@ -107,6 +107,9 @@
         position: relative;
         top: 0;
     }
+    @include breakpoint(mobile-max) {                            
+        left: 0;
+    }
     &__form-heading{
         font-size: 1.8rem;
         color: $white-color;
