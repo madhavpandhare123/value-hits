@@ -1,0 +1,14 @@
+.client-banner{
+    background-color: $banner-bgColor;
+    &__heading{
+        font-size: 8rem;
+        padding: 3rem 0 12rem 0;
+    }
+}
+.clients{
+    position: relative;
+    &__client-box{
+        padding: 20rem 0 4rem 0;
+        text-align: center;
+    }
+}

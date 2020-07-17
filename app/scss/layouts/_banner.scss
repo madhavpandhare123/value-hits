@@ -5,14 +5,14 @@
         position: absolute;
         left: 8%;
         top: 20%;
-        @include breakpoint(mobile-max) {
-            top: 2%;
+        @include breakpoint(ipad-min and large-desktop-max) {                            
+            top: 5%;
         }
         &__main-heading{
             font-size: 3.5rem;
             font-weight: 100;
-            @include breakpoint(ipad-pro) {
-                font-size: 2.5rem;
+            @include breakpoint(ipad-min and large-desktop-max) {                            
+                font-size: 2rem;
             }
             @include breakpoint(mobile-max) {
                 font-size: 1.2rem;
@@ -21,17 +21,18 @@
         &__subheading{
             font-size: 8rem;
             width: 60%;
-            @include breakpoint(ipad-pro) {
-                font-size: 6rem;
+            @include breakpoint(ipad-min and large-desktop-max) {                            
+                font-size: 4rem;
             }
             @include breakpoint(mobile-max) {
-                font-size: 2rem;
+                font-size: 1.6rem;
+                width: 80%;
             }
         }
         &__banner-btn{
             font-size: 2.2rem;
-            @include breakpoint(mobile-max) {
-                font-size: 1.8rem;
+            @include breakpoint(ipad-min and large-desktop-max) {                            
+                font-size: 2rem;
             }
             @include breakpoint(mobile-max) {
                 font-size: 1.2rem;

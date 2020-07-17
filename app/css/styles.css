@@ -7214,6 +7214,9 @@ a.text-dark:hover, a.text-dark:focus {
 .icon-arrow:before {
   content: ""; }
 
+.icon-tick-icon:before {
+  content: ""; }
+
 .top-wrapper {
   background-color: #030303;
   font-size: 1.8rem; }
@@ -7415,32 +7418,33 @@ footer {
     position: absolute;
     left: 8%;
     top: 20%; }
-    @media (max-width: 767px) {
+    @media (max-width: 1200px) {
       .banner-section__tag {
-        top: 2%; } }
+        top: 5%; } }
     .banner-section__tag__main-heading {
       font-size: 3.5rem;
       font-weight: 100; }
-      @media (max-width: 1024px) {
+      @media (max-width: 1200px) {
         .banner-section__tag__main-heading {
-          font-size: 2.5rem; } }
+          font-size: 2rem; } }
       @media (max-width: 767px) {
         .banner-section__tag__main-heading {
           font-size: 1.2rem; } }
     .banner-section__tag__subheading {
       font-size: 8rem;
       width: 60%; }
-      @media (max-width: 1024px) {
+      @media (max-width: 1200px) {
         .banner-section__tag__subheading {
-          font-size: 6rem; } }
+          font-size: 4rem; } }
       @media (max-width: 767px) {
         .banner-section__tag__subheading {
-          font-size: 2rem; } }
+          font-size: 1.6rem;
+          width: 80%; } }
     .banner-section__tag__banner-btn {
       font-size: 2.2rem; }
-      @media (max-width: 767px) {
+      @media (max-width: 1200px) {
         .banner-section__tag__banner-btn {
-          font-size: 1.8rem; } }
+          font-size: 2rem; } }
       @media (max-width: 767px) {
         .banner-section__tag__banner-btn {
           font-size: 1.2rem; } }
@@ -7807,6 +7811,153 @@ footer {
     .carousel-control-next {
       top: -10%; } }
 
+.seo-section {
+  position: relative; }
+  .seo-section__brieftag {
+    font-size: 3rem;
+    padding: 20rem 6rem 6rem 6rem; }
+    @media (max-width: 1200px) {
+      .seo-section__brieftag {
+        padding: 4rem;
+        font-size: 2rem; } }
+  .seo-section__seo-title {
+    padding: 5rem;
+    border-top: 1px solid #F1F1F1; }
+    @media (max-width: 1200px) {
+      .seo-section__seo-title {
+        padding: 3rem; } }
+  .seo-section__tabs ul {
+    display: flex;
+    justify-content: space-evenly; }
+    .seo-section__tabs ul li a {
+      color: #000;
+      padding: 2rem 7rem;
+      font-size: 2.5rem;
+      background-color: #F1F1F1; }
+      @media (max-width: 1200px) {
+        .seo-section__tabs ul li a {
+          padding: 1rem 1rem;
+          font-size: 1.5rem; } }
+      @media (max-width: 767px) {
+        .seo-section__tabs ul li a {
+          font-size: 1rem; } }
+
+#myTabContent table thead tr th {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  border: none; }
+  @media (max-width: 1200px) {
+    #myTabContent table thead tr th {
+      padding: 1rem 0;
+      font-size: 1.5rem; } }
+
+#myTabContent table tbody tr {
+  box-shadow: 1px 2px 8px 1px #ddd; }
+  #myTabContent table tbody tr td {
+    text-align: center;
+    padding: 2rem; }
+    @media (max-width: 1200px) {
+      #myTabContent table tbody tr td {
+        padding: 1rem; } }
+    #myTabContent table tbody tr td:first-child {
+      text-align: start;
+      font-size: 2.2rem; }
+      @media (max-width: 1200px) {
+        #myTabContent table tbody tr td:first-child {
+          font-size: 1.2rem; } }
+
+#myTabContent table tbody .table-subheading {
+  text-align: center !important;
+  font-size: 2.5rem; }
+
+.tab-pane {
+  padding: 4rem;
+  border: 1px solid #F1F1F1;
+  border-top: none; }
+  @media (max-width: 1200px) {
+    .tab-pane {
+      padding: 1rem; } }
+
+@media (max-width: 767px) {
+  .nav {
+    flex-wrap: nowrap; } }
+
+.request-form {
+  background-color: #F43535;
+  padding: 3rem;
+  box-shadow: 1px 2px 9px 3px #707070;
+  position: absolute;
+  top: -9rem;
+  left: 5%; }
+  @media (max-width: 991px) {
+    .request-form {
+      position: relative;
+      top: 0; } }
+  .request-form__form-heading {
+    font-size: 1.8rem;
+    color: #fff;
+    padding-bottom: 2rem;
+    font-weight: 100; }
+    @media (max-width: 1200px) {
+      .request-form__form-heading {
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .request-form__form-heading {
+        text-align: center;
+        padding-bottom: 0;
+        font-size: 1.3rem; } }
+    .request-form__form-heading span {
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      font-weight: 600; }
+      @media (max-width: 767px) {
+        .request-form__form-heading span {
+          font-size: 1.7rem; } }
+  .request-form .req-inpt {
+    background-color: #F43535;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0; }
+    @media (max-width: 767px) {
+      .request-form .req-inpt {
+        font-size: 1.7rem; } }
+    .request-form .req-inpt:focus {
+      background-color: rgba(112, 112, 112, 0.4);
+      color: #fff; }
+    .request-form .req-inpt::placeholder {
+      color: #fff; }
+  .request-form .req-btn {
+    background-color: rgba(112, 112, 112, 0.4);
+    font-size: 2.2rem;
+    color: #fff;
+    position: relative;
+    top: -40px;
+    border: rgba(112, 112, 112, 0.4); }
+    @media (max-width: 991px) {
+      .request-form .req-btn {
+        top: 0; } }
+    @media (max-width: 767px) {
+      .request-form .req-btn {
+        font-size: 1.7rem; } }
+    .request-form .req-btn:hover, .request-form .req-btn:active, .request-form .req-btn:focus {
+      background-color: #F43535 !important;
+      color: #000 !important;
+      border: #fff !important;
+      box-shadow: none !important; }
+
+.client-banner {
+  background-color: #E2E7EA; }
+  .client-banner__heading {
+    font-size: 8rem;
+    padding: 3rem 0 12rem 0; }
+
+.clients {
+  position: relative; }
+  .clients__client-box {
+    padding: 20rem 0 4rem 0;
+    text-align: center; }
+
 html {
   font-size: 10px; }
 
@@ -7826,9 +7977,6 @@ button {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
-
-p {
-  margin-bottom: 1rem; }
 
 ul {
   margin: 0; }
@@ -7894,9 +8042,9 @@ ul li a {
 .brief-desc {
   font-size: 2.2rem;
   width: 60%; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     .brief-desc {
-      font-size: 1.8rem; } }
+      font-size: 1.5rem; } }
   @media (max-width: 767px) {
     .brief-desc {
       font-size: 0.9rem; } }

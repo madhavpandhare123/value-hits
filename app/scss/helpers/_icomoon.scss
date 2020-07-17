@@ -74,4 +74,9 @@
     content: $icon-arrow; 
   }
 }
+.icon-tick-icon{
+  &:before{
+    content: $icon-tick-icon;
+  }
+}
 

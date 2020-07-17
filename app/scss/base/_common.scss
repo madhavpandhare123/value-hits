@@ -42,8 +42,8 @@ ul {
 .brief-desc{
     font-size: 2.2rem;
     width: 60%;
-    @include breakpoint(ipad-pro) {
-        font-size: 1.8rem;
+    @include breakpoint(ipad-min and large-desktop-max) {                            
+        font-size: 1.5rem;
     }
     @include breakpoint(mobile-max) {
         font-size: 0.9rem;

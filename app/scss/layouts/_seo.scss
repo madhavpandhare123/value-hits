@@ -1,0 +1,170 @@
+.seo-section {
+    position: relative;
+    &__brieftag{
+        font-size: 3rem;
+        padding: 20rem 6rem 6rem 6rem;
+        @include breakpoint(ipad-min and large-desktop-max) {                            
+            padding: 4rem;
+            font-size: 2rem;
+        }
+    }
+    &__seo-title {
+        padding: 5rem;
+        border-top: 1px solid $tab-color;
+        @include breakpoint(ipad-min and large-desktop-max) {                            
+            padding: 3rem;
+        }
+    }
+    &__tabs {
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                a{
+                    color: $black-color;
+                    padding: 2rem 7rem;
+                    font-size: 2.5rem;
+                    background-color: $tab-color;
+                    @include breakpoint(ipad-min and large-desktop-max) {
+                        padding: 1rem 1rem;
+                        font-size: 1.5rem;
+                    }
+                    @include breakpoint(mobile-max) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#myTabContent{
+    table{
+        thead{
+            tr{
+                th{
+                    padding: 3rem 0;
+                    text-align: center;
+                    font-size: 2.5rem;
+                    border: none;
+                    @include breakpoint(ipad-min and large-desktop-max) {
+                        padding: 1rem 0;
+                        font-size: 1.5rem;
+                    }
+                }                
+            }
+        }
+        tbody{
+            tr{
+                box-shadow: 1px 2px 8px 1px #ddd;              
+                td{                   
+                    text-align: center;
+                    padding: 2rem;
+                    @include breakpoint(ipad-min and large-desktop-max) {                            
+                        padding: 1rem;
+                    }
+                    &:first-child {
+                        text-align: start;
+                        font-size: 2.2rem;
+                        @include breakpoint(ipad-min and large-desktop-max) {                            
+                            font-size: 1.2rem;
+                        }
+					}
+                }
+            }
+            .table-subheading{
+                text-align: center !important;
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+.tab-pane{
+    padding: 4rem;
+    border: 1px solid $tab-color;
+    border-top: none;
+    @include breakpoint(ipad-min and large-desktop-max) {
+        padding: 1rem;
+    }
+}
+.nav{
+    @include breakpoint(mobile-max) {
+        flex-wrap: nowrap;
+    }
+}
+
+
+.request-form{
+    // width: 100%;
+    background-color: $audit-bg;
+    padding: 3rem;
+    box-shadow: 1px 2px 9px 3px $div-border;
+    position: absolute;
+    top: -9rem;
+    left: 5%;
+    @include breakpoint(mobile-max and ipad-pro-max) {                            
+        position: relative;
+        top: 0;
+    }
+    &__form-heading{
+        font-size: 1.8rem;
+        color: $white-color;
+        padding-bottom: 2rem;
+        font-weight: 100;
+        @include breakpoint(ipad-min and large-desktop-max) {                            
+            text-align: center;
+        }
+        @include breakpoint(mobile-max) {                            
+            text-align: center;
+            padding-bottom: 0;
+            font-size: 1.3rem;
+        }
+        span{
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            font-weight: 600;
+            @include breakpoint(mobile-max) {                            
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .req-inpt{
+        background-color: $audit-bg;
+        color: $white-color;
+        font-size: 2rem;
+        margin-bottom: 0;
+        @include breakpoint(mobile-max) {                            
+            font-size: 1.7rem;
+        }
+        &:focus{
+            background-color: rgba(112, 112, 112, 0.4);
+            color: $white-color;
+        }
+        &::placeholder{
+            color: $white-color;
+        }
+    }
+    .req-btn{
+        background-color: rgba(112, 112, 112, 0.4);
+        font-size: 2.2rem;
+        color: $white-color;
+        position: relative;
+        top: -40px;
+        border: rgba(112, 112, 112, 0.4);
+        @include breakpoint(mobile-max and ipad-pro-max) {                            
+            top: 0;
+        }
+        @include breakpoint(mobile-max) {                            
+            font-size: 1.7rem;
+        }
+        &:hover,
+        &:active,
+        &:focus{
+            background-color: $audit-bg !important;
+            color: #000 !important;
+            border: $white-color !important;
+            box-shadow: none !important;
+        }
+    }
+}
