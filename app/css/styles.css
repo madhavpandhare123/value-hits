@@ -7903,11 +7903,11 @@ footer {
 
 .request-form {
   background-color: #F43535;
-  padding: 3rem;
+  padding: 2rem;
   box-shadow: 1px 2px 9px 3px #707070;
   position: absolute;
   top: -9rem;
-  left: 5%; }
+  left: 7%; }
   @media (max-width: 991px) {
     .request-form {
       position: relative;
@@ -7967,12 +7967,6 @@ footer {
       border: #fff !important;
       box-shadow: none !important; }
 
-.client-banner {
-  background-color: #E2E7EA; }
-  .client-banner__heading {
-    font-size: 8rem;
-    padding: 3rem 0 12rem 0; }
-
 .clients {
   position: relative; }
   .clients__client-box {
@@ -7985,7 +7979,6 @@ footer {
       text-transform: uppercase;
       padding: 4rem 0; }
     .clients__client-box__list ul {
-      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       width: 100%;
@@ -8004,6 +7997,28 @@ footer {
           height: 104px; }
   .clients .list-group .list-group-item {
     border-top-width: 1px !important; }
+
+.case-study-section {
+  margin-top: 15rem; }
+  .case-study-section ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0; }
+    .case-study-section ul li {
+      list-style: none;
+      display: inline-block;
+      width: calc(100% / 2); }
+      @media (max-width: 767px) {
+        .case-study-section ul li {
+          width: 100%; } }
+  .case-study-section__card-box {
+    padding: 2rem;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-bottom: 2rem; }
+    .case-study-section__card-box:nth-child(odd) {
+      margin-right: 2rem; }
 
 html {
   font-size: 10px; }
@@ -8109,3 +8124,9 @@ ul li a {
     color: #fff;
     box-shadow: none;
     border-color: #fff; }
+
+.banner-heading {
+  background-color: #E2E7EA; }
+  .banner-heading__heading {
+    font-size: 8rem;
+    padding: 3rem 0 18rem 0; }

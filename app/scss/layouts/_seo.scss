@@ -98,11 +98,11 @@
 .request-form{
     // width: 100%;
     background-color: $audit-bg;
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 1px 2px 9px 3px $div-border;
     position: absolute;
     top: -9rem;
-    left: 5%;
+    left: 7%;
     @include breakpoint(mobile-max and ipad-pro-max) {                            
         position: relative;
         top: 0;

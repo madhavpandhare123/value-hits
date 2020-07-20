@@ -1,0 +1,11 @@
+.case-study-section {
+  margin-top: 15rem; }
+  .case-study-section ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0; }
+    .case-study-section ul li {
+      list-style: none;
+      display: inline-block;
+      width: calc(100% / 2); }

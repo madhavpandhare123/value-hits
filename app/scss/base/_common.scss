@@ -65,3 +65,12 @@ ul {
         border-color: $white-color;
     }
 }
+
+
+.banner-heading{
+    background-color: $banner-bgColor;
+    &__heading{
+        font-size: 8rem;
+        padding: 3rem 0 18rem 0;
+    }
+}

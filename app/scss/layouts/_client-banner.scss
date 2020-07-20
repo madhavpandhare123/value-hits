@@ -1,49 +1,40 @@
-.client-banner{
-    background-color: $banner-bgColor;
-    &__heading{
-        font-size: 8rem;
-        padding: 3rem 0 12rem 0;
-    }
-}
-.clients{
+.clients {
     position: relative;
-    &__client-box{
+    &__client-box {
         padding: 20rem 0 4rem 0;
         text-align: center;
-        @include breakpoint(mobile-max) {                            
+        @include breakpoint(mobile-max) {
             padding: 0rem 0 4rem 0;
         }
-        &__title{
+        &__title {
             text-transform: uppercase;
             padding: 4rem 0;
         }
-        &__list{
-            ul{
-                display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        padding-left: 0;
-                li{
+        &__list {
+            ul {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-left: 0;
+                li {
                     list-style: none;
-        display: inline-block;
-        width: calc(100% / 4);
-        height: 120px;
-        text-align: center;
-        @include breakpoint(mobile-max) {
-            width: 100%;
-        }
-        img{
-            width: 150px;
-            height: 104px;
-        }
-                    
+                    display: inline-block;
+                    width: calc(100% / 4);
+                    height: 120px;
+                    text-align: center;
+                    @include breakpoint(mobile-max) {
+                        width: 100%;
+                    }
+                    img {
+                        width: 150px;
+                        height: 104px;
+                    }
                 }
             }
         }
     }
-    .list-group{
-        .list-group-item{
+    .list-group {
+        .list-group-item {
             border-top-width: 1px !important;
         }
     }
