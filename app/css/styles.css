@@ -8121,6 +8121,9 @@ footer {
     .qurantine-footer-section {
       padding-top: 30rem; } }
 
+.marketing-section {
+  position: relative; }
+
 html {
   font-size: 10px; }
 
