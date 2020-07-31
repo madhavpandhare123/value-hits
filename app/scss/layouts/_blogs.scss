@@ -27,8 +27,14 @@
 }
 .card-body {
     padding: 3rem;
+    @include breakpoint(mobile-max) {
+        padding: 2rem;
+     }
     .card-text {
         margin-bottom: 5rem;
+        @include breakpoint(mobile-max) {
+            margin-bottom: 0;
+         }
     }
 }
 
@@ -39,7 +45,7 @@
     background-color: $black-color;
     padding: 6rem 4rem;
     @include breakpoint(mobile-max) {
-           bottom: -15%;
+           bottom: -38%;
            padding: 3rem 1rem;
         }
     &__title {

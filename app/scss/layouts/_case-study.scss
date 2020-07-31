@@ -1,5 +1,8 @@
 .case-study-section {
     margin-top: 15rem;
+    @include breakpoint(mobile-max) {                            
+        margin-top: 3rem;
+    }
     ul {
         flex-direction: row;
         flex-wrap: wrap;
@@ -19,8 +22,19 @@
         background-color: #f1f1f1;
         border-radius: 10px;
         margin-bottom: 2rem;
+        width: 98%;
         &:nth-child(odd){
-            margin-right: 2rem;
+            // margin-right: 2rem;
+        }
+        .card{
+            background-color: #f1f1f1;
+            border: none;
+            img{
+                border-radius: 12px;
+            }
+            .card-body{
+                padding: 3rem 0;
+            }
         }
     }
 }

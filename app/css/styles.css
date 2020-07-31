@@ -7318,6 +7318,9 @@ footer {
     text-align: center; }
   footer ul li {
     padding: 2rem 0; }
+    @media (max-width: 767px) {
+      footer ul li {
+        padding: 0.4rem 0; } }
     footer ul li a {
       padding: 0 1rem;
       color: #000; }
@@ -7694,8 +7697,14 @@ footer {
 
 .card-body {
   padding: 3rem; }
+  @media (max-width: 767px) {
+    .card-body {
+      padding: 2rem; } }
   .card-body .card-text {
     margin-bottom: 5rem; }
+    @media (max-width: 767px) {
+      .card-body .card-text {
+        margin-bottom: 0; } }
 
 .reach-out-section {
   position: absolute;
@@ -7705,7 +7714,7 @@ footer {
   padding: 6rem 4rem; }
   @media (max-width: 767px) {
     .reach-out-section {
-      bottom: -15%;
+      bottom: -38%;
       padding: 3rem 1rem; } }
   .reach-out-section__title {
     display: flex;
@@ -8000,6 +8009,9 @@ footer {
 
 .case-study-section {
   margin-top: 15rem; }
+  @media (max-width: 767px) {
+    .case-study-section {
+      margin-top: 3rem; } }
   .case-study-section ul {
     flex-direction: row;
     flex-wrap: wrap;
@@ -8016,9 +8028,98 @@ footer {
     padding: 2rem;
     background-color: #f1f1f1;
     border-radius: 10px;
+    margin-bottom: 2rem;
+    width: 98%; }
+    .case-study-section__card-box .card {
+      background-color: #f1f1f1;
+      border: none; }
+      .case-study-section__card-box .card img {
+        border-radius: 12px; }
+      .case-study-section__card-box .card .card-body {
+        padding: 3rem 0; }
+
+.attract-banner {
+  background-color: #E2E7EA;
+  text-align: center;
+  padding: 4rem 0; }
+  .attract-banner__main {
+    font-size: 3.6rem; }
+    @media (max-width: 767px) {
+      .attract-banner__main {
+        font-size: 2rem; } }
+  .attract-banner__seo {
+    font-size: 2.2rem;
+    font-weight: 100;
+    margin-top: 6rem; }
+    @media (max-width: 767px) {
+      .attract-banner__seo {
+        font-size: 1.2rem;
+        margin-top: 2rem; } }
+
+.quarantine-section {
+  position: relative;
+  margin-bottom: 30rem;
+  padding-bottom: 30rem; }
+  @media (max-width: 767px) {
+    .quarantine-section {
+      margin-bottom: 10rem;
+      padding-bottom: 10rem; } }
+  .quarantine-section .row {
+    margin-top: 6rem; }
+    @media (max-width: 767px) {
+      .quarantine-section .row {
+        margin-top: 2rem; } }
+    .quarantine-section .row .main-img__bg-img img {
+      width: 100%;
+      height: 460px; }
+      @media (max-width: 767px) {
+        .quarantine-section .row .main-img__bg-img img {
+          height: auto; } }
+    .quarantine-section .row .main-img__img-desc {
+      margin: 4rem 0;
+      font-size: 2.2rem; }
+      @media (max-width: 767px) {
+        .quarantine-section .row .main-img__img-desc {
+          margin: 2rem 0;
+          font-size: 1.5rem; } }
+  .quarantine-section .indexing-wrapper__heading {
+    font-size: 4rem;
     margin-bottom: 2rem; }
-    .case-study-section__card-box:nth-child(odd) {
-      margin-right: 2rem; }
+    @media (max-width: 767px) {
+      .quarantine-section .indexing-wrapper__heading {
+        font-size: 2.5rem; } }
+  .quarantine-section .indexing-wrapper__desc {
+    font-size: 2.2rem;
+    margin-bottom: 4rem; }
+    @media (max-width: 767px) {
+      .quarantine-section .indexing-wrapper__desc {
+        font-size: 1.5rem;
+        margin-bottom: 2rem; } }
+  .quarantine-section .card-deck {
+    display: flex;
+    flex-direction: column; }
+    .quarantine-section .card-deck .card {
+      margin-bottom: 2rem; }
+      .quarantine-section .card-deck .card .img-wrapper img {
+        height: 300px; }
+      .quarantine-section .card-deck .card .card-body {
+        padding: 2rem 0 8rem 2rem; }
+        .quarantine-section .card-deck .card .card-body .card-text {
+          margin-bottom: 2rem; }
+
+.attract-reach .reach-out-section {
+  margin: 0 10rem;
+  width: auto; }
+  @media (max-width: 767px) {
+    .attract-reach .reach-out-section {
+      bottom: -12%;
+      margin: 0; } }
+
+.qurantine-footer-section {
+  padding-top: 35rem; }
+  @media (max-width: 767px) {
+    .qurantine-footer-section {
+      padding-top: 30rem; } }
 
 html {
   font-size: 10px; }
@@ -8130,3 +8231,7 @@ ul li a {
   .banner-heading__heading {
     font-size: 8rem;
     padding: 3rem 0 18rem 0; }
+    @media (max-width: 767px) {
+      .banner-heading__heading {
+        padding: 3rem 0 3rem 0;
+        text-align: center; } }

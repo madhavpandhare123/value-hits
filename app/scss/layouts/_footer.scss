@@ -51,6 +51,9 @@ footer {
     ul {
         li {
             padding: 2rem 0;
+            @include breakpoint(mobile-max) {
+                padding: 0.4rem 0;
+            }
             a {
                 padding: 0 1rem;
                 color: $black-color;

@@ -72,5 +72,9 @@ ul {
     &__heading{
         font-size: 8rem;
         padding: 3rem 0 18rem 0;
+        @include breakpoint(mobile-max) {
+            padding: 3rem 0 3rem 0;
+            text-align: center;
+        }
     }
 }
