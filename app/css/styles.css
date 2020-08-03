@@ -8124,6 +8124,102 @@ footer {
 .marketing-section {
   position: relative; }
 
+.marketing-banner-section {
+  position: relative; }
+  .marketing-banner-section__img img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%; }
+  .marketing-banner-section__text {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 31%;
+    text-align: center; }
+    .marketing-banner-section__text__heading1 {
+      font-size: 5rem;
+      font-weight: 100; }
+    .marketing-banner-section__text__heading2 {
+      font-size: 6.4rem; }
+
+.marketing-desc {
+  margin: 15rem 15rem 10rem 15rem;
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center; }
+
+.number-section {
+  background-color: #E2E7EA;
+  padding-bottom: 15rem; }
+  .number-section__num-heading {
+    text-align: center;
+    font-size: 6.1rem;
+    padding: 6rem; }
+
+.num-desc ul {
+  text-align: center; }
+  .num-desc ul li {
+    background-color: #c8c4c4;
+    margin-right: 1rem;
+    padding: 3rem 1rem;
+    width: 360px; }
+
+.num-desc__heading {
+  font-size: 8rem; }
+
+.num-desc__subheading {
+  font-size: 2.2rem;
+  padding: 2rem 0; }
+
+.num-desc__desc {
+  font-size: 2.2rem; }
+
+.vision-mission-section {
+  color: #fff;
+  display: flex; }
+  .vision-mission-section .vision-section {
+    background-color: #242424;
+    padding: 10rem 10rem;
+    text-align: center; }
+    .vision-mission-section .vision-section__heading {
+      font-size: 4.5rem;
+      margin-bottom: 4rem; }
+    .vision-mission-section .vision-section__desc {
+      margin: 0;
+      font-size: 2.2rem; }
+  .vision-mission-section .mission-section {
+    background-color: #000;
+    padding: 10rem 10rem;
+    text-align: center; }
+    .vision-mission-section .mission-section__heading {
+      font-size: 4.5rem;
+      margin-bottom: 4rem; }
+    .vision-mission-section .mission-section__desc {
+      font-size: 2.2rem; }
+
+.certification {
+  padding: 4rem 0; }
+  .certification__desc {
+    width: 50%; }
+    .certification__desc__heading {
+      font-size: 6.1rem; }
+    .certification__desc__desc {
+      font-size: 2.2rem; }
+  .certification__partner-img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.benefits {
+  padding: 4rem 0;
+  background-color: #F43535;
+  font-size: 4.1rem;
+  color: #fff;
+  cursor: pointer; }
+
 html {
   font-size: 10px; }
 

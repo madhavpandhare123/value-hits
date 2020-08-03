@@ -1,0 +1,125 @@
+.marketing-banner-section {
+    position: relative;
+    &__img {
+        // overflow: hidden;
+        img {
+            padding: 0;
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+            max-width: 100%;
+            // margin-top: -390px;
+        }
+    }
+    &__text {
+        color: $white-color;
+        position: absolute;
+        left: 5%;
+        top: 31%;
+        text-align: center;
+        // -webkit-transform: translateX(-50%);
+        // transform: translateX(-50%);
+        // // max-width: 600px;
+        &__heading1 {
+            font-size: 5rem;
+            font-weight: 100;
+        }
+        &__heading2 {
+            font-size: 6.4rem;
+        }
+    }
+}
+.marketing-desc{
+    margin: 15rem 15rem 10rem 15rem;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center;
+}
+.number-section{
+    background-color: $banner-bgColor;
+    padding-bottom: 15rem;
+    &__num-heading{
+        text-align: center;
+        font-size: 6.1rem;
+        padding: 6rem;
+    }
+}
+.num-desc{
+    ul{
+        text-align: center;
+        li{
+            background-color: #c8c4c4;
+            margin-right: 1rem;
+            padding: 3rem 1rem;
+            width: 360px;
+        }
+    }
+    &__heading{
+        font-size: 8rem;
+    }
+    &__subheading{
+        font-size: 2.2rem;
+        padding: 2rem 0;
+    }
+    &__desc{
+        font-size: 2.2rem;
+    }
+}
+.vision-mission-section{
+    color: $white-color;
+    display: flex;
+    .vision-section{
+        background-color: $mission-bg;
+        padding: 10rem 10rem;
+        text-align: center;
+        
+        &__heading{
+            font-size: 4.5rem;
+            margin-bottom: 4rem;
+
+        }
+        &__desc{
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+    }
+    .mission-section{
+        background-color: $black-color;
+        padding: 10rem 10rem;
+        text-align: center;
+        &__heading{
+            font-size: 4.5rem;
+            margin-bottom: 4rem;
+        }
+        &__desc{
+            font-size: 2.2rem;
+        }
+    }
+}
+.certification{
+    // text-align: center;
+    padding: 4rem 0;
+    &__desc{
+        width: 50%;
+        &__heading{
+            font-size: 6.1rem;
+        }
+        &__desc{
+            font-size: 2.2rem;
+        }
+    }
+    &__partner-img{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.benefits{
+    padding: 4rem 0;
+    background-color: $audit-bg;
+    font-size: 4.1rem;
+    color: $white-color;
+    cursor: pointer;
+}
